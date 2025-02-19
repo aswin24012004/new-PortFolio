@@ -1,0 +1,126 @@
+ /* Navbar Styling */
+ .navbar {
+    background:  #222;
+    padding: 15px 0;
+    box-shadow: 0 4px 10px rgba(255, 204, 0, 0.5),
+    0 4px 10px rgba(255, 204, 0, 0.5);
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+    color: #ffcc00 !important; /* Gold color */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.1rem;
+    color: yellow !important;
+    transition: 0.3s;
+}
+.navbar-brand, .nav-link {
+    color: yellow !important;
+    font-weight: bold;
+}
+.nav-link:hover {
+    color: #ffcc00 !important;
+}
+
+
+/* Hero Section */
+.hero {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    background: black;
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+.hero-content h1 {
+    font-size: 3rem;
+    font-weight: bold;
+}
+.hero-content h2 {
+    font-size: 2rem;
+    color: #ffcc00;
+}
+.btn-custom {
+    background-color: #ffcc00;
+    color: black;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+    margin-top: 5%;
+    margin-left: 5%;
+}
+.btn-custom:hover {
+    background-color: #ffaa00;
+    color: white;
+}
+.hero-image img {
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.2);
+    width: 350px;
+    height: 350px;
+}
+/* Social Links Styling */
+    .social-links {
+        display: flex;
+        justify-content: center;
+        gap: 15px;
+        margin-top: 20px;
+    }
+
+    .social-icon {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+        font-size: 1.5rem;
+        text-decoration: none;
+        transition: 0.3s ease-in-out;
+    }
+
+    /* Individual Colors */
+    .github {
+        background: #222;
+        color: white;
+    }
+    .linkedin {
+        background: #0077b5;
+        color: white;
+    }
+    .instagram {
+        background: linear-gradient(45deg, #f09433, #e6683c, #dc2743, #cc2366, #bc1888);
+        color: white;
+    }
+    .email {
+        background: #ffcc00;
+        color: black;
+    }
+
+    /* Hover Effects */
+    .social-icon:hover {
+        transform: scale(1.1);
+        box-shadow: 0 4px 10px rgba(255, 255, 255, 0.3);
+    }
+
+/* Responsive Styling */
+@media (max-width: 768px) {
+    .hero-content {
+        text-align: center;
+    }
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    .hero-content h2 {
+        font-size: 1.5rem;
+    }
+    .hero .row {
+        flex-direction: column-reverse;
+    }
+}
